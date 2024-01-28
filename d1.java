@@ -88,7 +88,7 @@ class demo extends JFrame implements ActionListener
                  System.out.println(username+password+user_type);
                   try {
                         Class.forName("com.mysql.cj.jdbc.Driver");
-                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/loginsystem", "root", "hemnaik9000123@");
+                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/loginsystem", "root", "password");
                         JOptionPane.showMessageDialog(null,"Connectionn Established!!!","Connection Status",JOptionPane.INFORMATION_MESSAGE);
                        
                         String sqlquery="SELECT * FROM user_detail WHERE password LIKE"+'"'+password+'"';
